@@ -13,6 +13,7 @@ app.use(fileUpload({}));
 
 ///Routes
 app.use("/api/post", require("./routes/post.routes.js"));
+app.use('/api/auth', require('./routes/auth.router.js'))
 
 const PORT = 5000;
 
